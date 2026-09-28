@@ -1,15 +1,15 @@
 #ifndef LISTNODE_HPP
 #define LISTNODE_HPP
 
-#include "Order.hpp"
+#include "Pedido.hpp"
 
 class ListNode {
 public:
-    Order data;
-    ListNode* prev;
-    ListNode* next;
+    Pedido dados;
+    ListNode* ant;
+    ListNode* prox;
 
-    ListNode(const Order& order) : data(order), prev(nullptr), next(nullptr) {} // construtor
+    ListNode(const Pedido& pedido) : dados(pedido), ant(nullptr), prox(nullptr) {} // construtor
 };
 
 #endif
